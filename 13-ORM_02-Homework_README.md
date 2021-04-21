@@ -1,5 +1,4 @@
-# ORM-ECommerce-BackEnd
-Back end of an e-commerce site by modifying starter code
+# 13 Object-Relational Mapping (ORM): E-Commerce Back End
 
 ## Your Task
 
@@ -246,5 +245,4 @@ You are required to submit BOTH of the following for review:
 * The URL of the GitHub repository. Give the repository a unique name and include a readme describing the project.
 
 ---
-
-
+© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
