@@ -14,7 +14,7 @@
     "url": "git@github.com:rdevans87/orm-ecommerce-backend.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Ryan Evans",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^2.0.3"
