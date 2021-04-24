@@ -17,13 +17,13 @@ Product.belongsTo(Category, {
 // Product is associated with many Tags 
  Product.belongsToMany(Tag, {
   through: ProductTag,
-  foreignKey: 'category_id',
+  foreignKey: 'product_id',
  }),
 
 // Tags associated with many Products 
 Tag.belongsToMany(Product, {
   through: ProductTag,
-  foreignKey: 'category_id',
+  foreignKey: 'tag_id',
 });
 
 //Package four models and export them as an object to import proper names
