@@ -4,9 +4,15 @@
 
 Internet retail, also known as **e-commerce**, is the largest sector of the electronics industry, generating an estimated $29 trillion in 2019. E-commerce platforms like Shopify and WooCommerce provide a suite of services to businesses of all sizes. Due to their prevalence, understanding the fundamental architecture of these platforms will benefit you as a full-stack web developer.
 
-Your task is to build the back end for an e-commerce site by modifying starter code. You’ll configure a working Express.js API to use Sequelize to interact with a MySQL database.
+Your task is to build the back end for an e-commerce site configure a working Express.js API to use Sequelize to interact with a MySQL database.
 
-Because this application won’t be deployed, you’ll also need to provide a link to a walkthrough video that demonstrates its functionality and all of the acceptance criteria being met. You’ll need to submit a link to the video and add it to the readme of your project.
+
+You’ll need to use the [MySQL2](https://www.npmjs.com/package/mysql2) and [Sequelize](https://www.npmjs.com/package/sequelize) packages to connect your Express.js API to a MySQL database and the [dotenv](https://www.npmjs.com/package/dotenv) package to use environment variables to store sensitive data.
+
+Use the `schema.sql` file in the `db` folder to create your database with MySQL shell commands. Use environment variables to store sensitive data like your MySQL username, password, and database name.
+
+Your database should contain the following four models `Category`, Product, Tag, Product Tag.  Execute association methods on your Sequelize models to create the following relationships between them:
+
 
 ## User Story
 
@@ -48,98 +54,10 @@ The following animation shows the application's POST, PUT, and DELETE routes for
 
 Your walkthrough video should also show the POST, PUT, and DELETE routes for products and tags being tested in Insomnia Core.
 
-## Getting Started
-
-You’ll need to use the [MySQL2](https://www.npmjs.com/package/mysql2) and [Sequelize](https://www.npmjs.com/package/sequelize) packages to connect your Express.js API to a MySQL database and the [dotenv](https://www.npmjs.com/package/dotenv) package to use environment variables to store sensitive data.
-
-Use the `schema.sql` file in the `db` folder to create your database with MySQL shell commands. Use environment variables to store sensitive data like your MySQL username, password, and database name.
-
-### Database Models
-
-Your database should contain the following four models `Category`, Product, Tag, Product Tag. including the requirements listed for each model:
 
 
-* `Product`
 
-  * `id`
-  
-    * Integer.
-  
-    * Doesn't allow null values.
-  
-    * Set as primary key.
-  
-    * Uses auto increment.
 
-  * `product_name`
-  
-    * String.
-  
-    * Doesn't allow null values.
-
-  * `price`
-  
-    * Decimal.
-  
-    * Doesn't allow null values.
-  
-    * Validates that the value is a decimal.
-
-  * `stock`
-  
-    * Integer.
-  
-    * Doesn't allow null values.
-  
-    * Set a default value of `10`.
-  
-    * Validates that the value is numeric.
-
-  * `category_id`
-  
-    * Integer.
-  
-    * References the `Category` model's `id`.
-
-* `Tag`
-
-  * `id`
-  
-    * Integer.
-  
-    * Doesn't allow null values.
-  
-    * Set as primary key.
-  
-    * Uses auto increment.
-
-  * `tag_name`
-  
-    * String.
-
-* `ProductTag`
-
-  * `id`
-
-    * Integer.
-
-    * Doesn't allow null values.
-
-    * Set as primary key.
-
-    * Uses auto increment.
-
-  * `product_id`
-
-    * Integer.
-
-    * References the `Product` model's `id`.
-
-  * `tag_id`
-
-    * Integer.
-
-    * References the `Tag` model's `id`.
 
 ### Associations
 
