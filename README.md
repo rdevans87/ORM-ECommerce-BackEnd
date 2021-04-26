@@ -53,21 +53,7 @@ The following animation shows the application's POST, PUT, and DELETE routes for
 ![In Insomnia Core, the user tests “DELETE Category by ID,” “CREATE Category,” and “UPDATE Category.”](./Assets/13-orm-homework-demo-03.gif)
 
 Your walkthrough video should also show the POST, PUT, and DELETE routes for products and tags being tested in Insomnia Core.
-
-
-
-
-
-
-### Associations
-
-You'll need to execute association methods on your Sequelize models to create the following relationships between them:
-
-* `Product` belongs to `Category`, and `Category` has many `Product` models, as a category can have multiple products but a product can only belong to one category.
-
-* `Product` belongs to many `Tag` models, and `Tag` belongs to many `Product` models. Allow products to have multiple tags and tags to have many products by using the `ProductTag` through model.
-
-> **Hint:** Make sure you set up foreign key relationships that match the column we created in the respective models.
+ 
 
 ### Fill Out the API Routes to Perform RESTful CRUD Operations
 
@@ -121,7 +107,7 @@ This homework is graded based on the following criteria:
 
   * Syncs Sequelize models to a MySQL database on the server start.
 
-  * Includes column definitions for all four models outlined in the homework instructions.
+  * Includes column definitions for all four models outlined in the homework instructions. 
 
   * Includes model associations outlined in the homework instructions.
 
