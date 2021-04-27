@@ -77,7 +77,7 @@ This homework is graded based on the following criteria:
 
 ### Deliverables: 10%
 
-* The GitHub repository containing your application code.
+* The GitHub repository containing your application code. 
 
 ### Walkthrough Video: 37%
 
