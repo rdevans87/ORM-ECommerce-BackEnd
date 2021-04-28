@@ -14,12 +14,12 @@ Tag.init(
     },
     tag_name: {
     type: DataTypes.STRING,
-    references: {
-      // model: 'tag',
-      // key: 'id'
+    // references: {
+    //   // model: 'tag',
+    //   // key: 'id'
+    // }
     }
-  }
-},   
+  },   
   {
     sequelize,
     timestamps: false,
