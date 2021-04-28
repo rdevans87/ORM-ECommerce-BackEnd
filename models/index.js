@@ -12,7 +12,7 @@ Product.belongsTo(Category, {
 //Defines a Category having many Products to create multiple foreign keys in the 'Product' table
 Category.hasMany(Product, {
   foreignKey: 'category_id',
-  onDelete: 'CASCADE'
+  // onDelete: 'CASCADE'
 });
 
 // Product is associated with many Tags 
