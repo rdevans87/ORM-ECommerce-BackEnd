@@ -12,22 +12,22 @@ Product.belongsTo(Category, {
 //Defines a Category having many Products to create multiple foreign keys in the 'Product' table
 Category.hasMany(Product, {
   foreignKey: 'category_id',
-  // onDelete: 'CASCADE'
+    onDelete: 'CASCADE',
 });
 
 // Product is associated with many Tags 
  Product.belongsToMany(Tag, {
    through: ProductTag, 
-   foreignKey: 'tag_id',
+   foreignKey: 'product_id',
   // through: { 
   //   model: ProductTag,
   // }
- }),
+ });
 
 // Tags associated with many Products 
 Tag.belongsToMany(Product, {
   through: ProductTag, 
-  foreignKey: 'tag_id'
+  foreignKey: 'tag_id',
   // through: {
   //   model: ProductTag,
   // }
