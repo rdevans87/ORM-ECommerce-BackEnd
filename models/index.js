@@ -15,7 +15,6 @@ Category.hasMany(Product, {
   onDelete: 'CASCADE'
 });
 
-
 // Product is associated with many Tags 
  Product.belongsToMany(Tag, {
   through: { 
