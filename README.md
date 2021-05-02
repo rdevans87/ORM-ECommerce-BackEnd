@@ -2,14 +2,20 @@
 
 ## Description 
 
-This a back-end application for an e-commerce site.  configure a working Express.js API to use Sequelize to interact with a MySQL database.
+This is a back-end application for an e-commerce site that uses [MySQL2](https://www.npmjs.com/package/mysql2) and [Sequelize](https://www.npmjs.com/package/sequelize) packages to connect an `Express.js` API to a MySQL database, which utilizes the [dotenv](https://www.npmjs.com/package/dotenv) package to store sensitive environmental variables such as: `username`, `password`, and `database name`. 
+
+The `schema.sql` file in the `db` folder was run in `MySQL Workbench` to create the `ecommerce_db` and establish a connection with the `Insomnia Core` server through the command line interface or integrated terminal in VS code. Once the database is created, the specific `NPM packages` are installed using `npm i` and the `npm run seed` command migrates the data to MYSQL. Object-Relational Mappin can then   GET, POST, PUT, and DELETE, data from the database,  
 
 
-You’ll need to use the [MySQL2](https://www.npmjs.com/package/mysql2) and [Sequelize](https://www.npmjs.com/package/sequelize) packages to connect your Express.js API to a MySQL database and the [dotenv](https://www.npmjs.com/package/dotenv) package to use environment variables to store sensitive data.
+A table is generated from the js files in the models folder. 
 
-Use the `schema.sql` file in the `db` folder to create your database with MySQL shell commands. Use environment variables to store sensitive data like your MySQL username, password, and database name.
 
-Your database should contain the following four models `Category`, `Product`, `Tag`, `Product Tag`.  Execute association methods on your Sequelize models to create the following relationships between them:
+combiles into a table from the js files in the models  Oband 
+
+
+using Object-Relational Mapping to create the database infrastucture by mapping objects into  object-relational mapping API to GET, POST, PUT, DELETE 
+
+
 
 
 ## User Story
@@ -34,42 +40,35 @@ WHEN I open API GET routes in Insomnia Core for categories, products, or tags
 THEN the data for each of these routes is displayed in a formatted JSON
 WHEN I test API POST, PUT, and DELETE routes in Insomnia Core
 THEN I am able to successfully create, update, and delete data in my database
+
 ```
 
+
+## Usage
+
+
+
 ## Mock-Up
+The following animation shows the application's GET, POST, PUT, and DELETE routes for `TAGS` being tested in Insomnia Core:
 
-The following animation shows the application's GET routes to return all categories, all products, and all tags being tested in Insomnia Core:
+![In Insomnia Core, the user tests “GET tags,” “GET tag by ID" ,and “PUT update Tag" , "DELETE Tag by ID" , "POST create New Tag”.](./assets/categories.gif)
 
-![In Insomnia Core, the user tests “GET tags,” “GET tag by ID" ,and “PUT update Tag" , "DELETE Tag by ID" , "POST create New Tag”.](./Assets/13-orm-homework-demo-01.gif)
+The following animation shows the application's GET, POST, PUT, and DELETE routes for `CATEGORIES` being tested in Insomnia Core:
 
-The following animation shows the application's GET routes to return a single category, a single product, and a single tag being tested in Insomnia Core:
+![In Insomnia Core, the user tests "GET Categories", “GET Categories by ID”, “PUT update Category", "DELETE category by ID", "POST create category".](./assets/categories.gif)
 
-![In Insomnia Core, the user tests "Get Categories", “GET Categories by ID”, “PUT update Category", "DELETE category by ID", "POST create category".](./Assets/13-orm-homework-demo-02.gif)
+The following animation shows the application's GET, POST, PUT, and DELETE routes for `PRODUCTS` being tested in Insomnia Core:
 
-The following animation shows the application's POST, PUT, and DELETE routes for categories being tested in Insomnia Core:
+![In Insomnia Core, the user tests “GET product", "GET products", “CREATE product,” and “UPDATE product.”](./assets/product.gif)
 
-![In Insomnia Core, the user tests “DELETE Category by ID,” “CREATE Category,” and “UPDATE Category.”](./Assets/13-orm-homework-demo-03.gif)
 
-Your walkthrough video should also show the POST, PUT, and DELETE routes for products and tags being tested in Insomnia Core. 
- 
-
-### Seed the Database
-
-After creating the models and routes, run `npm run seed` to seed data to your database so that you can test your routes.
-
-### Sync Sequelize to the Database on Server Start
-
-Create the code needed in `server.js` to sync the Sequelize models to the MySQL database on server start.
 
 ## Grading Requirements
 
-This homework is graded based on the following criteria: 
+```md
 
-### Deliverables: 10%
-
-* The GitHub repository containing your application code. 
-
-### Walkthrough Video: 37%
+Deliverables: 10%
+Walkthrough Video: 37%
 
 * A walkthrough video that demonstrates the functionality of the e-commerce back end must be submitted, and a link to the video should be included in your readme file.
 
