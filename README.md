@@ -4,19 +4,7 @@
 
 This is a back-end application for an e-commerce site that uses [MySQL2](https://www.npmjs.com/package/mysql2) and [Sequelize](https://www.npmjs.com/package/sequelize) packages to connect an `Express.js` API to a MySQL database, which utilizes the [dotenv](https://www.npmjs.com/package/dotenv) package to store sensitive environmental variables such as: `username`, `password`, and `database name`. 
 
-The `schema.sql` file in the `db` folder was run in `MySQL Workbench` to create the `ecommerce_db` and establish a connection with the `Insomnia Core` server through the command line interface or integrated terminal in VS code. Once the database is created, the specific `NPM packages` are installed using `npm i` and the `npm run seed` command migrates the data to MYSQL. Object-Relational Mappin can then   GET, POST, PUT, and DELETE, data from the database,  
-
-
-A table is generated from the js files in the models folder. 
-
-
-combiles into a table from the js files in the models  Oband 
-
-
-using Object-Relational Mapping to create the database infrastucture by mapping objects into  object-relational mapping API to GET, POST, PUT, DELETE 
-
-
-
+The `schema.sql` file in the `db` folder was run in `MySQL Workbench` to create the `ecommerce_db` and establish a connection with the `Insomnia Core` server through the command line interface or integrated terminal in VS code. Once the database is created, the specific `NPM packages` are installed using `npm i` and the `npm run seed` command migrates the data to MYSQL. This app relies heavily on back-end technologies and object-relational mapping for various methods of data manipulation, storage, and retrieval when using HTTP methods with RESTUL API services.  
 
 ## User Story
 
@@ -42,6 +30,8 @@ WHEN I test API POST, PUT, and DELETE routes in Insomnia Core
 THEN I am able to successfully create, update, and delete data in my database
 
 ```
+## Installation
+
 
 
 ## Usage
