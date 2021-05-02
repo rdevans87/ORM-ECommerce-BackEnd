@@ -2,7 +2,7 @@
 
 ## Description 
 
-Your task is to build the back end for an e-commerce site configure a working Express.js API to use Sequelize to interact with a MySQL database.
+This a back-end application for an e-commerce site.  configure a working Express.js API to use Sequelize to interact with a MySQL database.
 
 
 You’ll need to use the [MySQL2](https://www.npmjs.com/package/mysql2) and [Sequelize](https://www.npmjs.com/package/sequelize) packages to connect your Express.js API to a MySQL database and the [dotenv](https://www.npmjs.com/package/dotenv) package to use environment variables to store sensitive data.
@@ -50,16 +50,8 @@ The following animation shows the application's POST, PUT, and DELETE routes for
 
 ![In Insomnia Core, the user tests “DELETE Category by ID,” “CREATE Category,” and “UPDATE Category.”](./Assets/13-orm-homework-demo-03.gif)
 
-Your walkthrough video should also show the POST, PUT, and DELETE routes for products and tags being tested in Insomnia Core.
+Your walkthrough video should also show the POST, PUT, and DELETE routes for products and tags being tested in Insomnia Core. 
  
-
-### Fill Out the API Routes to Perform RESTful CRUD Operations
-
-Fill out the unfinished routes in `product-routes.js`, `tag-routes.js`, and `category-routes.js` to perform create, read, update, and delete operations using your Sequelize models.
-
-Note that the functionality for creating the many-to-many relationship for products has already been completed for you.
-
-> **Hint**: Be sure to look at the mini-project code for syntax help and use your model's column definitions to figure out what `req.body` will be for POST and PUT routes!
 
 ### Seed the Database
 
