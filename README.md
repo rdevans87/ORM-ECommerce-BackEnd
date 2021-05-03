@@ -1,10 +1,20 @@
 # ORM-ECommerce-BackEnd
 
+
 ## Description 
 
-This is a back-end application for an e-commerce site that uses [MySQL2](https://www.npmjs.com/package/mysql2) and [Sequelize](https://www.npmjs.com/package/sequelize) packages to connect an `Express.js` API to a MySQL database, which utilizes the [dotenv](https://www.npmjs.com/package/dotenv) package to store sensitive environmental variables such as: `username`, `password`, and `database name`. 
+This project was developed using starter code to create a back-end application for an e-commerce site that uses the command line interface (CLI) and object-relational mapping for various methods of data manipulation, storage, and retrieval when using HTTP methods with RESTUL APIs.  
 
-The `schema.sql` file in the `db` folder was run in `MySQL Workbench` to create the `ecommerce_db` and establish a connection with the `Insomnia Core` server through the command line interface or integrated terminal in VS code. Once the database is created, the specific `NPM packages` are installed using `npm i` and the `npm run seed` command migrates the data to MYSQL. This app relies heavily on back-end technologies and object-relational mapping for various methods of data manipulation, storage, and retrieval when using HTTP methods with RESTUL API services.  
+The `schema.sql` file in the `db` folder was run in `MySQL Workbench` to create the `ecommerce_db` and establish a connection with the `Insomnia Core` through the command line interface (CLI). Once the database is created, the specific `NPM packages` are installed using `npm i`. 
+[MySQL2](https://www.npmjs.com/package/mysql2) and [Sequelize](https://www.npmjs.com/package/sequelize) packages to connect an `Express.js` API to a MySQL database, which utilizes the [dotenv](https://www.npmjs.com/package/dotenv) package to store sensitive environmental variables such as: `username`, `password`, and `database name`. `npm run seed` command migrates the data to MYSQL. A table is created out of the four objects located in the models folder: `Product`, `Category`, `Tag`, `ProductTag`.
+
+With the `node.js` packages installed and database seeded without error, run `NPM Start` to start the server and connect to local host [http://localhost:3001/](http://localhost:3001/) then peform and API get route for categories, products, or tag the data for each of these routes is displayed in a formatted JSO I test `API GET,POST, PUT, and DELETE` routes in Insomnia Core. I am able to successfully create, update, and delete data in my database
+Object-Relational Mapping (ORM): E-Commerce Back End 
+
+### [README.md deployed on GitHub pages](https://github.com/)
+
+### [Watch a demo of the Application](https://youtu.be/qtB-rwrJnYY)
+
 
 ## User Story
 
@@ -32,6 +42,16 @@ THEN I am able to successfully create, update, and delete data in my database
 ```
 ## Installation
 
+From the command line, run:
+
+`npm init`
+
+`npm install mysql2`
+
+`npm install sequelize`
+
+
+
 
 
 ## Usage
@@ -57,59 +77,16 @@ The following animation shows the application's GET, POST, PUT, and DELETE route
 
 ```md
 
-Deliverables: 10%
-Walkthrough Video: 37%
+  * Deliverables: 10%
+  
+  * Walkthrough Video: 37%
 
-* A walkthrough video that demonstrates the functionality of the e-commerce back end must be submitted, and a link to the video should be included in your readme file.
+  * Technical Acceptance Criteria: 40%
 
-* The walkthrough video must show all of the technical acceptance criteria being met.
+  * Repository Quality: 13%
 
-* The walkthrough video must demonstrate how to create the schema from the MySQL shell.
+  ```
 
-* The walkthrough video must demonstrate how to seed the database from the command line.
 
-* The walkthrough video must demonstrate how to start the application’s server.
-
-* The walkthrough video must demonstrate GET routes for all categories, all products, and all tags being tested in Insomnia Core.
-
-* The walkthrough video must demonstrate GET routes for a single category, a single product, and a single tag being tested in Insomnia Core.
-
-* The walkthrough video must demonstrate POST, PUT, and DELETE routes for categories, products, and tags being tested in Insomnia Core.
-
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the preceding acceptance criteria plus the following:
-
-  * Connects to a MySQL database using the [MySQL2](https://www.npmjs.com/package/mysql) and [Sequelize](https://www.npmjs.com/package/sequelize) packages.
-
-  * Stores sensitive data, like a user’s MySQL username, password, and database name, using environment variables through the [dotenv](https://www.npmjs.com/package/dotenv) package.
-
-  * Syncs Sequelize models to a MySQL database on the server start.
-
-  * Includes column definitions for all four models outlined in the homework instructions. 
-
-  * Includes model associations outlined in the homework instructions.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality readme with description and a link to a walkthrough video.
-
-## Review
-
-You are required to submit BOTH of the following for review:
-
-* A walkthrough video demonstrating the functionality of the application and all of the acceptance criteria being met.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a readme describing the project.
-
----
-
+[LICENSE FROM MIT](/Users/ryanevans/ORM-ECommerce-BackEnd/LICENSE)
 
