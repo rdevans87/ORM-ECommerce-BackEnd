@@ -8,14 +8,14 @@ This project was developed using starter code to create a back-end application f
 The `schema.sql` file in the `db` folder was run in `MySQL Workbench` to create the `ecommerce_db` and establish a connection with `Insomnia Core` through the command line interface (CLI). Once the database is created, the specific `NPM packages` are installed using `npm i`. 
 [MySQL2](https://www.npmjs.com/package/mysql2) and [Sequelize](https://www.npmjs.com/package/sequelize) packages to connect an `Express.js` API to a MySQL database, which utilizes the [dotenv](https://www.npmjs.com/package/dotenv) package to store sensitive environmental variables such as: `username`, `password`, and `database name`. `npm run seed` command migrates the data to MYSQL. A table is created out of the four objects located in the models folder: `Product`, `Category`, `Tag`, `ProductTag`.
 
-With the `node.js` packages installed and database seeded without error, run `NPM Start` to start the server and connect to local host [http://localhost:3001/](http://localhost:3001/). Then, an API GET request is performed for each route displaying in JSON format. All API POST, PUT, and DELETE` routes are tested in Insomnia Core. I am able to successfully create, update, and delete data in my database.
+With the `node.js` packages installed and database seeded without error, run `NPM Start` to start the server and connect to local host [http://localhost:3001/](http://localhost:3001/). Then, an API GET request is performed for each route displaying in JSON format. All API `POST, PUT, and DELETE` routes are tested in Insomnia Core. I am able to successfully create, update, and delete data in my database.
 
 
 ### [Repository on Github](https://github.com/rdevans87/ORM-ECommerce-BackEnd)
 
-### [README deployed on GitHub pages](https://github.com/)
+### [README deployed on GitHub pages](https://rdevans87.github.io/ORM-ECommerce-BackEnd/)
 
-### Watch a demo of the Application's functionality: [E-Commerce Backend Demo] (https://youtu.be/qtB-rwrJnYY)
+### Watch a demo of the Application's functionality: [E-Commerce Backend Demo](https://youtu.be/qtB-rwrJnYY)
 
 
 ## User Story
